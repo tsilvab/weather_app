@@ -9,3 +9,5 @@ USER STORY
 As a traveler
 I want to see the weather outlook for multiple cities 
 So that I can plan a trip accordingly
+https://tsilvab.github.io/weather_app/.![Screenshot (1)](https://user-images.githubusercontent.com/78382681/112708451-7b48d800-8e88-11eb-9d6a-c38363aa181a.png)
+
