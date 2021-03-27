@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="hero">
+        <h1 class="title">Weather Dashboard</h1>
+    </header>
+
+
+    <main>
+        <div class="col-12 col-md-4">
+
+            <div class="container">
+                <h2 class="search">Search</h2>
+                <form id="searchField">
+                    <input id="city" type="text" class="inputValue" placeholder="Enter a city..." />
+                    <button type="submit" class="searchBtn">Search</button>
+                </form>
+            </div>
+            <div class="history">
+                <h2>history</h2>
+                <div id="pastSearchBtn"></div>
+            </div>
+        </div>
+        <div id="weatherIndex">
+            <div class="display">
+                <h2 id=wDisplay></h2>
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <p class="wind"></p>
+
+            </div>
+        </div>
+        <div id="fiveDay">5-Day Forcast</div>
+        <div class="col-8 mb-3" id="forcastContainer"></div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

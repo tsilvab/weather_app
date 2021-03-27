@@ -1,0 +1,59 @@
+body{
+    color:black;
+    background-color: rgba(199, 197, 197, 0.904);
+}
+header {
+    background-image:url(weather2.jpg);
+    width: 100%;
+    padding: 30px;
+}
+.title{
+    color:navy;
+    margin-left: 30px;
+    font-size: 50px;
+}
+h2{
+    font-size: 30px;
+    color:navy;
+    margin-left: 20px;
+}
+.inputValue{
+margin-left: 20px;
+}
+input.inputValue{
+    padding:15px;
+    padding-right: 50px;
+}
+.searchBtn{
+    padding:15px;
+    background-color: rgba(134, 193, 233, 0.959);
+}
+
+.history {
+    font-size: 12px; 
+    margin-left: 20px;
+    color: navy;
+}
+.display {
+    margin-left: 700px;
+}
+
+#fiveDay{
+    font-size: 15px;
+}
+
+span.severe{
+    padding: 3px;
+    background-color: red;
+    color:white;
+}
+
+span.moderate{
+    padding: 3px;
+    background-color: yellow;
+}
+
+span.good{
+    padding: 3px;
+    background-color: green;
+    color:white
