@@ -1,5 +1,4 @@
 var searchField = document.querySelector('#searchField');
-// const button = document.querySelector(".searchBtn");
 const cityInput = document.querySelector("#city")
 const inputValue = document.querySelector(".inputValue");
 const history = document.querySelector(".history");
@@ -41,7 +40,6 @@ let getForcast = function (city) {
             console.log(data);
 
             // empty div to create elements and append
-
             let cName = document.createElement('h3');
             cName.textContent = data.city.name;
             forcast.append(cName);
