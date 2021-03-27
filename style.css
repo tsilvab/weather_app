@@ -39,7 +39,10 @@ input.inputValue{
 }
 
 #fiveDay{
-    font-size: 15px;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: navy;
 }
 
 span.severe{
@@ -56,4 +59,5 @@ span.moderate{
 span.good{
     padding: 3px;
     background-color: green;
-    color:white
+    color:white;
+}
