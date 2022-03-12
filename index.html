@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Weather Dashboard</title>
-</head>
+  </head>
 
-<body>
-    <header class="hero">
-        <h1 class="title">Weather Dashboard</h1>
+  <body>
+    <header class = "bg-dark text-white text-center p-2">
+      <h1 class="title">Weather Dashboard</h1>
     </header>
 
-
-    <main>
-        <div class="col-12 col-md-4">
-
-            <div class="container">
-                <h2 class="search">Search</h2>
-                <form id="searchField">
-                    <input id="city" type="text" class="inputValue" placeholder="Enter a city..." />
-                    <button type="submit" class="searchBtn">Search</button>
-                </form>
-            </div>
-            <div class="history">
-
-                <div id="pastSearchBtn"></div>
-            </div>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-3 p-2 search-column">
+          <h2 class="search">Search</h2>
+          <form class="p-2" id="searchField">
+            <input
+              id="city"
+              type="text"
+              autofocus="true"
+              class="inputValue"
+              placeholder="Enter a city..."
+            />
+            <button class="btn btn-primary" type="submit" class="searchBtn">
+              Search
+            </button>
+          </form>
         </div>
-        <div id="weatherIndex">
-            <div class="display">
-                <h2 id=wDisplay></h2>
-                <p class="temp"></p>
-                <p class="humidity"></p>
-                <p class="wind"></p>
-
-            </div>
+        <div class="column col-12 col md-9 history">
+          <div class="past-search" id="pastSearchBtn"></div>
+          <!-- <button
+            class="btn btn primary mb-3"
+            type="button"
+            id="clear-history"
+          ></button> -->
         </div>
-        <div id="fiveDay">5 Day Forcast</div>
-        <div class="col-8 mb-3" id="forcastContainer"></div>
-
+        <div class="col-12 col-md-9">
+        <div lass = "row selected-city"id="weatherIndex">
+          <div class="col-12 display list-group">
+            <h2 id="wDisplay"></h2>
+            <p class="temp"></p>
+            <p class="humidity"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+        <div class="row" id="five-day-forecast">
+          <h2 class="col-12" id="fiveDay"></h2>
+          <div class="col-12" id="forcastContainer"></div>
+        </div>
+    </div>
+      </div>
+      </main>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

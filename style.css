@@ -12,35 +12,36 @@ header {
     margin-left: 30px;
     font-size: 50px;
 }
-h2{
+/* h2{
     font-size: 30px;
     color:navy;
     margin-left: 20px;
-}
-.inputValue{
+} */
+/* .inputValue{
 margin-left: 20px;
-}
-input.inputValue{
+} */
+/* input.inputValue{
     padding:15px;
     padding-right: 50px;
-}
+} */
 .searchBtn{
-    padding:15px;
+    /* padding:15px; */
     background-color: rgba(134, 193, 233, 0.959);
 }
 
 .history {
     font-size: 12px; 
-    margin-left: 20px;
+    /* margin-left: 20px; */
     color: navy;
 }
-.display {
-    margin-left: 700px;
-}
+/* .display {
+     margin-left: 700px; 
+    
+} */
 
 #fiveDay{
-    font-size: 30px;
-    margin-left: 20px;
+    /* font-size: 30px;
+    margin-left: 20px; */
     font-weight: bold;
     color: navy;
 }
@@ -60,4 +61,17 @@ span.good{
     padding: 3px;
     background-color: green;
     color:white;
+}
+
+.search-column{
+    background-color:	#D3D3D3;
+}
+
+.list-group-item{
+    line-height: 0.5;
+    border: none;
+    background-color: rgba(199, 197, 197, 0.904)
+}
+.card-body{
+    flex:auto
 }
